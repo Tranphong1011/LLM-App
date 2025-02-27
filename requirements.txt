@@ -1,0 +1,6 @@
+streamlit==1.42.2
+openai==1.64.0
+python-dotenv==1.0.1
+langchain_community==0.3.18
+langchain==0.3.19
+huggingface_hub==0.29.1
