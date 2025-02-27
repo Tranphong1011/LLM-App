@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="Main App", layout="wide")
 st.sidebar.title("Applications")
 
-app_selection = st.sidebar.radio("Select an app:", ["QA App", "Conversation App", "Text to Image App", "test"])
+app_selection = st.sidebar.radio("Select an app:", ["QA App", "Conversation App", "Text to Image App", "Text to Speech App", "test"])
 
 
 if app_selection == "QA App":
@@ -21,4 +21,8 @@ elif app_selection == "Text to Image App":
     from text_to_image_app import run_text_to_image_app
     st.title("🖼️ Text-to-Image Generator with DALL·E")
     run_text_to_image_app()
+elif app_selection == "Text to Speech App":
+    from text_to_speech_app import run_text_to_speech_app
+    st.title("🔊 Text-to-Speech Generator")
+    run_text_to_speech_app()
 
