@@ -3,7 +3,7 @@ import openai
 from config import openai_api_key
 
 
-# Set up OpenAI API key
+
 
 client = openai.OpenAI(api_key=openai_api_key)
 
